@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Pokémon VGC Argentina</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navegacion">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Pokémon VGC Argentina</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container text-center mt-4">
+            <h1 class="main-title">Pokémon VGC Argentina</h1>
+            <p class="main-subtitle">Regístrate y participa en los mejores torneos de Pokémon VGC.</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contact-form-container">
+            <h2 class="contact-form-title">Contacto</h2>
+            <form class="contact-form">
+                <label for="nombre" class="contact-form-label">Nombre</label>
+                <input type="text" id="nombre" class="contact-form-input" placeholder="Tu nombre">
+    
+                <label for="email" class="contact-form-label">Email</label>
+                <input type="email" id="email" class="contact-form-input" placeholder="Tu email">
+    
+                <label for="mensaje" class="contact-form-label">Mensaje</label>
+                <textarea id="mensaje" rows="5" class="contact-form-textarea" placeholder="Tu mensaje"></textarea>
+    
+                <button type="submit" class="contact-form-button">Enviar</button>
+            </form>
+        </div>
+    </main>
+    
+
+    <footer class="footer bg-primary text-white text-center py-3 mt-4">
+        <p>Casucci Rodrigo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

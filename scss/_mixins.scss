@@ -1,0 +1,19 @@
+@mixin button-styles($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        color: #fff;
+    }
+}
+
+@mixin card-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

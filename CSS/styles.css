@@ -1,313 +1,187 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f9fc;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main .section-title {
+  font-size: 2em;
+  color: #2e7df6;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .header {
-    background-color: #2e7df6;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  background-color: #2e7df6;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
-
-.navegacion {
-    background-color: #003a70;
-    padding: 10px 0;
+.header .navegacion {
+  background-color: rgb(9.9495412844, 97.2844036697, 231.0504587156);
+  padding: 10px 0;
 }
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.header .navegacion .nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.nav-item {
-    margin: 5px 15px;
+.header .navegacion .nav-list .nav-item {
+  margin: 5px 15px;
 }
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+.header .navegacion .nav-list .nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
 }
-
-.nav-link:hover {
-    color: #ffcb05;
+.header .navegacion .nav-list .nav-item .nav-link:hover {
+  color: #ffcb05;
 }
-
-.main-title {
-    font-size: 2.5em;
-    margin: 10px 0;
-    color: #ffcb05;
-    text-shadow: 2px 2px #2e7df6;
+.header .main-title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #ffcb05;
+  text-shadow: 2px 2px #2e7df6;
 }
-
-.main-subtitle {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.main {
-    flex: 1;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-title {
-    font-size: 2em;
-    color: #2e7df6;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.tournament-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.tournament-item {
-    background-color: #fff;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-    width: 100%; /* Asegura que ocupe el 100% del ancho de su contenedor */
-    max-width: 300px; /* Ajusta el tamaño máximo según tu diseño */
-}
-
-.tournament-item:hover {
-    transform: translateY(-5px);
-    border-color: #2e7df6;
-}
-
-.tournament-logo {
-    width: 100px;
-    height: auto;
-    margin: auto;
-}
-
-.tournament-date,
-.tournament-location,
-.tournament-name {
-    display: block;
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-}
-
-.register-button {
-    background-color: #ffcb05;
-    color: #2e7df6;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.register-button:hover {
-    background-color: #2e7df6;
-    color: #fff;
+.header .main-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .footer {
-    background-color: #2e7df6;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    margin-top: auto;
+  background-color: #2e7df6;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+.footer p {
+  margin: 0;
 }
 
-.footer p {
-    margin: 0;
+.tournament-item {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+.tournament-item:hover {
+  transform: translateY(-5px);
+  border-color: #2e7df6;
+}
+.tournament-item .tournament-logo {
+  width: 100px;
+  height: auto;
+  margin: auto;
+}
+.tournament-item .tournament-date,
+.tournament-item .tournament-location {
+  display: block;
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555;
+}
+.tournament-item .register-button {
+  background-color: #ffcb05;
+  color: #2e7df6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.tournament-item .register-button:hover {
+  background-color: rgb(209, 165.528, 0);
+  color: #fff;
 }
 
 .contact-form-container {
-    padding: 40px;
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container .contact-form-title {
+  font-size: 2em;
+  color: #2e7df6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-container .contact-form .contact-form-label {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+.contact-form-container .contact-form .contact-form-input,
+.contact-form-container .contact-form .contact-form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+.contact-form-container .contact-form .contact-form-input:focus,
+.contact-form-container .contact-form .contact-form-textarea:focus {
+  border-color: #2e7df6;
+  outline: none;
+}
+.contact-form-container .contact-form .contact-form-textarea {
+  resize: vertical;
+}
+.contact-form-container .contact-form .contact-form-button {
+  background-color: #ffcb05;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.contact-form-container .contact-form .contact-form-button:hover {
+  background-color: rgb(209, 165.528, 0);
+  color: #fff;
+}
+.contact-form-container .contact-form .contact-form-button:hover {
+  background-color: #2e7df6;
 }
 
-.contact-form-title {
-    font-size: 2em;
-    color: #2e7df6;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form-label {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.contact-form-input,
-.contact-form-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
-    margin-bottom: 15px;
-}
-
-.contact-form-input:focus,
-.contact-form-textarea:focus {
-    border-color: #2e7df6;
-    outline: none;
-}
-
-.contact-form-textarea {
-    resize: vertical;
-}
-
-.contact-form-button {
-    background-color: #ffcb05;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-}
-
-.contact-form-button:hover {
-    background-color: #2e7df6;
-    color: #fff;
-}
-
-/* Estilos para la sección de noticias */
-
-.news-item {
-    background-color: #fff;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.news-image {
-    width: 100%;
-    height: auto;
-}
-
-.news-item .card-body {
-    padding: 15px;
-}
-
-.news-item .card-title {
-    font-size: 1.5em;
-    color: #2e7df6;
-    margin-bottom: 15px;
-}
-
-.news-item .card-text {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.news-item .btn-primary {
-    background-color: #2e7df6;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.news-item .btn-primary:hover {
-    background-color: #003a70;
-}
-
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 2em;
-    }
-
-    .tournament-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tournament-item {
-        width: 100%;
-        max-width: 300px; /* Ajusta según tus necesidades */
-    }
-
-    .news-item {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin: 10px 0;
-    }
-
-    .main-title {
-        font-size: 1.5em;
-    }
-
-    .section-title {
-        font-size: 1.5em;
-    }
-
-    .news-item .card-title {
-        font-size: 1.2em;
-    }
-
-    .news-item .card-text {
-        font-size: 0.9em;
-    }
-
-    .news-item .btn-primary {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

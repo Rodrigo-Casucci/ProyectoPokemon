@@ -1,0 +1,95 @@
+// Importar variables y mixins si los tienes
+@import 'variables';
+@import 'mixins';
+
+// Ajustes responsivos
+
+// General para dispositivos móviles
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2em;
+    }
+
+    .main-subtitle {
+        font-size: 1em;
+    }
+
+    .tournament-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tournament-item {
+        max-width: 300px;
+    }
+
+    .contact-form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contact-form-title {
+        font-size: 1.5em;
+    }
+
+    .contact-form-input,
+    .contact-form-textarea {
+        padding: 10px;
+    }
+
+    .contact-form-button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+
+        .nav-link {
+            padding: 10px;
+            font-size: 1em;
+        }
+    }
+}
+
+// Ajustes para dispositivos muy pequeños
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .main-subtitle {
+        font-size: 0.9em;
+    }
+
+    .tournament-item {
+        max-width: 100%;
+    }
+
+    .contact-form-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .contact-form-title {
+        font-size: 1.2em;
+    }
+
+    .contact-form-input,
+    .contact-form-textarea {
+        padding: 8px;
+    }
+
+    .contact-form-button {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding: 8px;
+            font-size: 0.9em;
+        }
+    }
+}
